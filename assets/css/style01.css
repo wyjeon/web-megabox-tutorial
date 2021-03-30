@@ -1,3 +1,22 @@
+/* 스킵 메뉴 */
+#skip {
+  position: relative;
+}
+#skip a {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 140px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  background: #333;
+}
+#skip a:active,
+#skip a:focus {
+  top: 0;
+}
+
 /* 레이아웃 */
 #mNav {
   display: none;
@@ -701,6 +720,11 @@
 .notice ul li ul li dd {
   color: #777;
   padding-top: 3px;
+}
+.notice ul li ul li a {
+  border: 0;
+  padding: 0;
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
